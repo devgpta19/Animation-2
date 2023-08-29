@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+#main{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(255, 245, 233);
+}
+
+#first{
+    height: 50%;
+    width: 100%;
+}
+
+#second{
+    height: 50%;
+    width: 100%;
+}
+
+#scroll-container {
+    height: 50%;
+    border: 3px solid black;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: black;
+}
+
+#scroll-text1 {
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+    -moz-animation: animation1 5s linear infinite;
+    -webkit-animation: animation1 5s linear infinite;
+    animation: animation1 5s linear infinite;
+    width: 100%;
+    color: aliceblue;
+    font-size: 10vw;
+}
+
+@-webkit-keyframes animation1 {
+    from {
+        -webkit-transform: translateX(100%);
+    }
+
+    to {
+        -webkit-transform: translateX(-100%);
+    }
+}
+
+#scroll-text2 {
+
+    text-align:right;
+
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+
+    -moz-animation: animation2 15s linear infinite;
+    -webkit-animation: animation2 15s linear infinite;
+    animation: animation2 15s linear infinite;
+    width: 100%;
+    color: aliceblue;
+    font-size: 10vw;
+}
+
+@-webkit-keyframes animation2 {
+    from {
+        -webkit-transform: translateX(-100%);
+    }
+
+    to {
+        -webkit-transform: translateX(100%);
+    }
+}
